@@ -3,7 +3,9 @@
 #define _STRINGS_H
 
 /*
- *  Compute djb2 (non-cryptographic) hash, created by Dan Bernstein
+ * Computes djb2 (non-cryptographic) hash, created by Dan Bernstein
+ * 
+ * Source: http://www.cse.yorku.ca/~oz/hash.html
  */
 unsigned long djb2(char *string){
 
