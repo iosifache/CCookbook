@@ -9,9 +9,9 @@
  */
 #define LOGGER(enable, format, ...) \
     if (enable){ \
-        printf(format "\n", __VA_ARGS__); \
+        printf(format "\n" __VA_OPT__(,) __VA_ARGS__); \
         fflush(stdout); \
-    }
+    };
 
 /*
  * If a variable is set, prints a double array, element by element and prefixed
